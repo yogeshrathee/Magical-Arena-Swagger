@@ -15,7 +15,7 @@ import java.util.Map;
 @Api(tags = "Game Management")
 public class GameController {
 
-    private Map<String, Player> players = new HashMap<>();
+    private final Map<String, Player> players = new HashMap<>();
 
     @ApiOperation(value = "Set Player 1", notes = "Sets the details for Player 1")
     @PostMapping("/player1")
