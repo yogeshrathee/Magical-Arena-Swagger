@@ -72,4 +72,7 @@ public class Player {
     public String toString() {
         return this.name;
     }
+    public void receiveDamage(int damage) {
+        this.health = Math.max(0, this.health - damage);
+    }
 }
